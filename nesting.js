@@ -50,7 +50,25 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+var employeeUpdater = () => {
+  let fireTheo = employees.filter((ele) => {
+    delete ele['firstName'] === 'Theo'
+  }) 
+  let changeLorie = employees.map((ele) => {
+    if(ele['firstName'] === 'Lorie'){
+      ele['department'] = 'HR'
+    }
+  })
+  console.log(fireTheo, 'theo')
+  console.log(changeLorie, 'lorie')
+}
+
+
+
+
+  //   let fireTheo = employees.filter((ele) => {
+  //   delete ele['firstName'] === 'Theo'
+  // }) 
 
 
 
@@ -68,7 +86,12 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+var removeDuplicates = (arr) => {
+  let removed = arr.filter((val, i) => {
+    return arr.indexOf(val) >= i;
+  })
+  return removed
+}
 
 
 
@@ -96,9 +119,10 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+
+var grumpyActivity = cat.catFriends[0]['activities'][1];
+var fluffy2ndFriend = cat.catFriends[1]['name'];
+
 
 
 
@@ -138,7 +162,20 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+var recordCleaner = (obj) => {
+ let accidentChanger = myCar['accidents'].map((val, i) => {
+   val['atFaultForAccident'] = false;
+ })
+  
+  // for(i = 0; i < myCar['accidents'].length; i++){
+  //   if(myCar['accidents']['atFaultForAccident'] === true){
+  //     myCar['accidents']['atFaultForAccident'] = false
+  //   }
+  //   else{
+  //     myCar['accidents']['atFaultForAccident'] = true
+  //   }
+  // }
+}
 
 
 
@@ -157,6 +194,8 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
-//Code Here
+var looper = (arr1, arr2, arr3) => {
+
+} 
 
 
